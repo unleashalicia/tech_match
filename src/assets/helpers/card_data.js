@@ -1,26 +1,4 @@
 import back from '../images/hoyleback.jpg';
-import logo from '../images/logo.svg';
-import node from '../images/nodejs.png';
+import images from './card_images';
 
-export default [
-    {
-        back: back,
-        flipped: false,
-        front: logo
-    },
-    {
-        back: back,
-        flipped: false,
-        front: logo
-    },
-    {
-        back: back,
-        flipped: false,
-        front: node
-    },
-    {
-        back: back,
-        flipped: false,
-        front: node
-    }
-];
+export default images.map(front => ({front, back, flipped: false}));
